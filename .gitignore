@@ -6,3 +6,5 @@ out
 *.log
 # Netlify build artifacts
 .netlify/
+
+out/
