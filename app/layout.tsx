@@ -1,9 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Penner Construction | General Contractor Carthage TX</title>
-  <meta name="description" content="Penner Construction - Professional general contracting, home building, and renovations in Carthage, Texas. Free estimates. Licensed & insured." />
-  <meta name="keywords" content="general contractor, home building, renovations, Carthage TX, construction" />
-</head>
-<body className="antialiased">{children}</body>
-</html>
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Penner Construction | General Contractor in Carthage",
+  description: "Leading general contractor provider in Carthage. Call (903) 555-0123 for quality service.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
