@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Phone, Home, MapPin, Clock } from 'lucide-react';
+import { ArrowRight, Phone, Star, MapPin, Clock, Home } from 'lucide-react';
 
 export default function HomePage() {
   return (
